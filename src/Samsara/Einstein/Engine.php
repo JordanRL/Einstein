@@ -124,7 +124,7 @@ class Engine
     {
         $node = $this->grid->getNode($address);
 
-        $node->set(spl_object_hash($object), $object);
+        $node->set('obj_'.spl_object_hash($object), $object);
 
         $object->setNode($node);
 
