@@ -4,7 +4,7 @@ namespace Samsara\Einstein\Object\Base\Compose;
 
 use Samsara\Newton\Units\Time;
 use Samsara\Newton\Core\Quantity;
-use Samsara\Cantor\Provider\BCProvider;
+use Samsara\Fermat\Provider\BCProvider;
 
 trait ActionableTrait
 {

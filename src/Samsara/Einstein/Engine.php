@@ -40,7 +40,7 @@ class Engine
      */
     private $unitComposition;
 
-    public function __construct(GridInterface $grid, UnitComposition $unitComposition, $tickLength)
+    public function __construct(GridInterface $grid, UnitComposition $unitComposition, $tickLength = 1)
     {
         $this->grid = $grid;
 
