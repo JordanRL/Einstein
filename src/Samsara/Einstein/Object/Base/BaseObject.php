@@ -3,6 +3,7 @@
 namespace Samsara\Einstein\Object\Base;
 
 use Samsara\Newton\Core\UnitComposition;
+use Samsara\Planck\Node\Node;
 
 abstract class BaseObject
 {
@@ -11,6 +12,11 @@ abstract class BaseObject
      * @var UnitComposition
      */
     private $unitComposition;
+
+    /**
+     * @var Node
+     */
+    private $node;
 
     public function __construct(UnitComposition $unitComposition)
     {
@@ -23,6 +29,18 @@ abstract class BaseObject
     public function getUnitComposition()
     {
         return $this->unitComposition;
+    }
+
+    public function setNode(Node $node)
+    {
+        $this->node = $node;
+
+        return $this;
+    }
+
+    public function getNode()
+    {
+        return $this->node;
     }
 
 }
